@@ -1,4 +1,4 @@
-# Global-Climate-Shifts
+# Global Climate Shifts
  
 Our project aims to give some preliminary education about the cause and effects of rising surface temperatures, to people who don’t have a ton of exposure to the topic or to people who have some exposure but are looking for some evidence to back up these conclusions. We tried to make a site that was simple and accessible, and provides a gentle introduction to environmental education without being too overwhelming or intimidating. 
   
