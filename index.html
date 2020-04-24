@@ -1,0 +1,441 @@
+<html>
+
+<script src='main.js' type='text/javascript'></script>
+
+<head>
+  <title>Global Climate Shifts</title>
+</head>
+
+<body onLoad="setStyle('areafxwt')">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+  <div class="container">
+
+    <div class="container">
+
+      <input type="radio" name="navigation" checked="checked" id="select-1" />
+      <a href="#panel-1">Overview</a>
+      <input type="radio" name="navigation" id="select-2" />
+      <a href="#panel-2">Surface Temperatures</a>
+      <input type="radio" name="navigation" id="select-3" />
+      <a href="#panel-4">Air & GHG Emissions</a>
+      <input type="radio" name="navigation" id="select-4" />
+      <a href="#panel-3">Surface Temp & Emissions</a>
+      <input type="radio" name="navigation" id="select-5" />
+      <a href="#panel-5">Wildfires in the U.S.</a>
+      <input type="radio" name="navigation" id="select-6" />
+      <a href="#panel-6" text-align='center'>About Us</a>
+
+      <div class="scroll">
+
+        <section class="panel" id="panel-1">
+          <div class="topblock"><img src="./earth.png" width="100" height="100" class="rotateimg45">
+          </div>
+          <h2>An Introduction to Global Climate Shifts</h2>
+          <p id='intro' style="font-size:20px;">Global warming, global climate change, global climate emergency. Whatever you call it, (nearly) everyone is aware that there have been shifts in the Earth's average temperatures. <br><br><i>But what does that really mean for the environment and our way of life?</i><br><br>
+            In this visualization, we hope to demonstrate exactly how this <br><b>global increase in temperature</b> relates to other climate events. <br><br></p>
+
+          <p id='table_contents'>
+            <b>Surface Temperatures:</b> On this page, we demonstrate that the earth's average surface temperature has indeed risen significantly since 1900. The original dataset assembled by <a href="http://berkeleyearth.org/about/" target="_blank">Berkeley Earth</a> can be found <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data" target="_blank" font-style='bold'>HERE</a>.<br><br>
+            <b>Air & GHG Emissions:</b> In here, we take a look at how each country is contributing to its effects. The original dataset from the Organisation for Economic Co-operation and Development <a href="https://www.oecd.org/unitedstates/" target="_blank">(OECD)</a> can be found <a href="https://data.oecd.org/air/air-and-ghg-emissions.htm" target="_blank" font-style='bold'>HERE</a>.<br><br>
+            <b>Surface Temperature & Emissions:</b> Here, we demonstrate one of the main causes of this increase.<br><br>
+            <b>Wildfires in the United States:</b> Finally, we look at how higher windspeeds due to topographical shifts can combine with this temperature increase to produce more wildfires, as we have seen in places like California and Australia in recent years. The original dataset from <a href="https://www.nasa.gov/" target="_blank">NASA</a> can be found <a href="https://earthdata.nasa.gov/learn/toolkits/wildfires" target="_blank" font-style='bold'>HERE</a>.<br><br><br><br><br></p>
+
+          <!-- <a href="https://earthdata.nasa.gov/learn/toolkits/wildfires" target="_blank" font-style='bold'>HERE</a>. -->
+
+        </section>
+
+        <section class="panel color" id="panel-2">
+          <div class="topblock">
+            <img src="./earth.png" height="100" padding="20px" class="rotateimg45">
+          </div>
+
+          <!-- //tableau nonsense -->
+          <h2 id='surface_temp_title'>Changes in Surface Temperature (1900 - 2013)</h2>
+
+          <div id='surface_temp_position' style="position:absolute;">
+            <div class='tableauPlaceholder' id='viz1587575251679' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GridMapAvgDifferenceinTempfrom1900-2013&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='GridMapAvgDifferenceinTempfrom1900-2013&#47;Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GridMapAvgDifferenceinTempfrom1900-2013&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1587575251679');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '727px';
+              }
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+            <!-- // end tableau nonsense -->
+          </div>
+
+          <p id='surface_temp_texttitle'>Changes in Surface <br>Temperatures Over Time:</p>
+
+          <p id='surface_temp_text' class="scroll">This collection of maps shows how each country's average annual temperature (in Celsius) has deviated from its average over from 1900 to 2013. Increasingly dark shades of blue represent annual temperatures lower than the average, and red represents temperatures higher than the average. <br>If there were no global climate change, we would expect a fairly equal number of red and blue countries as we go through time -- fluctuation would be random. Note that as we get closer to 2013, we see much more red across the global and very little blue. This shows us that there is, in fact, a global temperature shift towards hotter temperatures.<br>Note also that not all countries have experienced the shift to the same degree. Countries closer to the poles in the northern hemisphere have experienced global temperature change at a much higher rate, which can be problematic since much of the earth’s freshwater is stored in these countries within ice packs. However, just because these countries experience temperature change to a more extreme degree, does not mean they are the only ones affected. Countries in more moderate or even tropical regions can face challenges in the face of global temperature change, as some climates are extremely sensitive to even slight shifts in temperature. Desertification, drought, and flooding are all things that can contribute to devastating outcomes such as crop failure in some of the most food-insecure regions of the world. <br><br>For another look at this rise in surface temperature as rendered by NASA, go <a href="https://climate.nasa.gov/climate_resources/139/video-global-warming-from-1880-to-2019/" font-style='bold'>HERE</a>.<br><br></p>
+
+          <!-- <h6 class='globalsurfacetempp'>Emissions Data HERE.</h6> -->
+
+        </section>
+
+        <!-- PANEL 3 -->
+
+        <section class="panel" id="panel-3">
+          <div class="topblock"><img src="./pollution.png" width="90" height="90" class="rotateimg45"></div>
+          <h2 id='ghgtitle'>Air Emissions</h2>
+
+          <div id='ghgposition' style="position:absolute;">
+            <div class='tableauPlaceholder' id='viz1587685209689' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;ComparingEmissionsbyCountry&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='ComparingEmissionsbyCountry&#47;Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;ComparingEmissionsbyCountry&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1587685209689');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '727px';
+              }
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+          <p id='ghgtexttitle'>Air & GHG emissions:</p>
+
+          <p id='ghgtext'>This graphic demonstrates how each air and greenhouse gas (GHG) pollutant contributes to the overall emissions load worldwide. We also see how much each country contributes to each type of emission. <br><br>For an overview of air and greenhouse gas emission types and how they are generated, see the EPA's guide <a href="https://www.epa.gov/ghgemissions/overview-greenhouse-gases" target="_blank" font-style='bold'>HERE</a>.</p>
+
+        </section>
+
+        <!-- PANEL 4 -->
+
+        <section class="panel" id="panel-4">
+          <div class="topblock">
+            <img src="./earth.png" height="100" padding="20px" class="rotateimg45">
+          </div>
+          <h2 id='explore_title'>Surface Temperature & Emissions</h2>
+
+          <!-- // tableau nonsense ensues -->
+          <div id='explore_position' style="position:absolute;">
+
+            <div class='tableauPlaceholder' id='viz1587687658445' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimateChange-GeospatialAvgTempEventsThroughTime_15875200108400&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='ClimateChange-GeospatialAvgTempEventsThroughTime_15875200108400&#47;Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimateChange-GeospatialAvgTempEventsThroughTime_15875200108400&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1587687658445');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '1077px';
+              }
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+          <p id='explore_text'>In the visualization, we show the possible relationship between surface temperatures and emission levels through time.<br>&emsp;- To use it, enter in a country or list of countries above. Select you desired event type (temperature or emissions) <br>&emsp; &nbsp;&nbsp;and then select your desired emissions type. Use the slider to select the timespan for the graph. <br>&emsp;- Notice how greenhouse gas emissions correlate, in general, with temperature rise. <br><br>For a full explanation of global surface temperatures are impacted by air and greenhouse gases, go see NASA's page <a href="https://earthobservatory.nasa.gov/features/GlobalWarming/page2.php" target="_blank" font-style='bold'>HERE</a>.
+          </p>
+
+        </section>
+
+        <!-- PANEL 5 -->
+
+        <section class="panel color" id="panel-5">
+          <div class="topblock"><img src="./fire.png" width="85" height="85" class="rotateimg45">
+          </div>
+          <h2 id='wildfire_title'>Wildfires in the US</h2>
+
+          <p id='wildfiretexttitle'>Please select a visualization.</p>
+          <select id="visualizations" onChange="setStyle(this.value)">
+            <option value='areafxwt'>Land area burned as a function of wind and temperature</option>
+            <option value='areafxtemp'>Land area burned as a function of temperature only</option>
+            <option value='areafxw'>Land area burned as a function of wind only </option>
+          </select>
+
+          <p id='wildfiretext'></p>
+
+          <!-- viz 1-->
+          <div id='areafxwt' class='wildfireframe'>
+            <div class='tableauPlaceholder' id='viz1586991294578' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;avgareafxwindtemp&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='wildfirebook&#47;avgareafxwindtemp' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;avgareafxwindtemp&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1586991294578');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+          <!-- viz 2-->
+
+          <div id='areafxtemp' class='wildfireframe'>
+            <div class='tableauPlaceholder' id='viz1586991585816' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;landburnedfxtempavg&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='wildfirebook&#47;landburnedfxtempavg' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;landburnedfxtempavg&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1586991585816');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+          <!-- viz 3-->
+          <div id='areafxw' class='wildfireframe'>
+
+            <div class='tableauPlaceholder' id='viz1586991483366' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;landburnedfxwind&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='wildfirebook&#47;landburnedfxwind' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;landburnedfxwind&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1586991483366');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+          </div>
+
+          <!-- viz 4-->
+          <div id='areafxwtseries' class='wildfireframe'>
+            <div class='tableauPlaceholder' id='viz1586991671316' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;avglandburnedfxofboth&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='wildfirebook&#47;avglandburnedfxofboth' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;avglandburnedfxofboth&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1586991671316');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+          <!-- viz 5-->
+          <div id='frequencyfxwt' class='wildfireframe'>
+            <div class='tableauPlaceholder' id='viz1586991723754' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;wildfireocurrenceasafunctionofwindandtemp&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='wildfirebook&#47;wildfireocurrenceasafunctionofwindandtemp' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;wildfireocurrenceasafunctionofwindandtemp&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1586991723754');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+          <!-- viz 6-->
+          <div id='frequencyfxw' class='wildfireframe'>
+            <div class='tableauPlaceholder' id='viz1586991789895' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;wildfireoccurencefxwind&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='wildfirebook&#47;wildfireoccurencefxwind' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;wildfireoccurencefxwind&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1586991789895');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+          <!-- viz 7-->
+          <div id='frequencyfxtemp' class='wildfireframe'>
+            <div class='tableauPlaceholder' id='viz1586991822837' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;Wildfireoccurenceasfunctionoftemp&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='wildfirebook&#47;Wildfireoccurenceasfunctionoftemp' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wi&#47;wildfirebook&#47;Wildfireoccurenceasfunctionoftemp&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1586991822837');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+
+        </section>
+
+        <section class="panel" id="panel-6">
+          <div class="topblock">
+            <img src="./UC-Logo.png" height="100" padding="20px" class="rotateimg45">
+          </div>
+          <h2 id='about_title'>About the Team</h2>
+
+          <div class="wrapper">
+            <div class="team">
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="percy_circle.png" alt="team_member_image">
+                </div>
+                <h3><a href="https://www.linkedin.com/in/percival-chen/" target="_blank">Percival Chen</a></h3>
+                <p class="role"><span>percivalchen@berkeley.edu</span></p>
+                <p>Percival Chen is a current 5th-year MIDS student. He is a recent graduate at UC Berkeley majoring in Molecular and Cell Biology with honors. During college, he was first exposed to data science through the Bachtrog Lab, where he conducted research and data analysis in a variety of genomic projects. Looking forward, he would like to use big data in industry to glean insights and drive decision-making.</p>
+              </div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="jen_circle.png" alt="team_member_image">
+                </div>
+                <h3><a href="https://www.linkedin.com/in/jen-pattersonradovancevic/" target="_blank">Jennifer Patterson</a></h3>
+                <p class="role">jenpatterson@berkeley.edu</p>
+                <p>Jennifer Patterson-Radovancevic is a current 5th year MIDS student. She graduated in 2019 from UC Berkeley with degrees in Political Science and Molecular and Cellular Neurobiology. In undergrad, she contributed to research developing an empirical model of international apologies for breaches of international law. In the future, she hopes to us data science to study the effects of cognition on political behavior. </p>
+              </div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="alex_circle.png" alt="team_member_image">
+                </div>
+                <h3><a href="https://www.linkedin.com/in/alexskim0912/" target="_blank">Alex Sewon Kim</a></h3>
+                <p class="role">alexskim@berkeley.edu</p>
+                <p>Alex Sewon Kim is a current 5th year MIDS student at School of Information. He graduated from UC Berkeley in 2019 with a dual degree in Economics and Applied Mathematics. During his undergraduate program, he developed curiosity in data science through the university's economics lab. His currently research interest is applied econometrics emphasis in environmental policy.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- // scroll -->
+
+    </div><!-- // container -->
+
+  </div>
+</body>
+
+</html>
