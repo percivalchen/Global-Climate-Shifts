@@ -4,7 +4,8 @@
 * Percival Chen
 * Jennifer Patterson
 * Alex Sewon Kim
- 
+
+## The Objective
 **Our project aims to give some preliminary education about the cause and effects of rising surface temperatures, to people who don’t have a ton of exposure to the topic or to people who have some exposure but are looking for some evidence to back up these conclusions.** We made a site that was simple and accessible, and provides a gentle introduction to environmental education without being too overwhelming or intimidating. 
  
 ## The Story
@@ -12,6 +13,6 @@ The structure of the project is somewhat narrative. First, the viewer is given a
 
 Within the site are also hyperlinks to other sources of data, info, and visualizations on the same topic, and we imagine users can use our viz as a starting-off point to learn more about environmental issues. Rather than trying to teach everything at once in one go, we hope our visualization sparks curiosity in the viewer. 
 
-## Implementation
+## The Implementation
 In order to implement this site, set up a web server and run the style sheet, the index.html, and our .js script all in one file (including the photos). The site is set up so all the panels are hosted on one web page. 
 
